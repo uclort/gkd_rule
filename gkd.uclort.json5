@@ -1,26 +1,27 @@
 {
   id: 0,
-  name: '默认订阅',
-  version: 178,
-  author: 'lisonge',
-  supportUri: 'https://github.com/gkd-kit/subscription',
-  checkUpdateUrl: 'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json',
+  name: 'Uclort',
+  version: 1,
+  author: 'uclort',
+  checkUpdateUrl: 'https://raw.githubusercontent.com/uclort/gkd_rule/main/gkd.uclort.version.json',
   apps: [
-  {
-  id: 'com.gwm.truck',
-  name: '长城炮',
-  groups: [
     {
-      key: 1,
-      name: '开屏广告',
-      activityIds: ['com.gwm.pickup.ui.splash.SplashActivity'],
-      rules: [
+      id: 'com.gwm.truck',
+      name: '长城炮',
+      groups: [
         {
-          matches: '[id="com.gwm.truck:id/splash_tv"]',
-        }
+          key: 1,
+          name: '开屏广告',
+          activityIds: [
+            'com.gwm.pickup.ui.splash.SplashActivity',
+          ],
+          rules: [
+            {
+              matches: '[id="com.gwm.truck:id/splash_tv"]',
+            },
+          ],
+        },
       ],
     },
   ],
 }
-  ]
-  }
