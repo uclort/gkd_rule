@@ -1,0 +1,26 @@
+{
+  id: 0,
+  name: '默认订阅',
+  version: 178,
+  author: 'lisonge',
+  supportUri: 'https://github.com/gkd-kit/subscription',
+  checkUpdateUrl: 'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json',
+  apps: [
+  {
+  id: 'com.gwm.truck',
+  name: '长城炮',
+  groups: [
+    {
+      key: 1,
+      name: '开屏广告',
+      activityIds: ['com.gwm.pickup.ui.splash.SplashActivity'],
+      rules: [
+        {
+          matches: '[id="com.gwm.truck:id/splash_tv"]',
+        }
+      ],
+    },
+  ],
+}
+  ]
+  }
