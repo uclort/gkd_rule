@@ -1,7 +1,7 @@
 {
   id: 226,
   name: 'Uclort',
-  version: 2,
+  version: 3,
   author: 'uclort',
   checkUpdateUrl: 'https://raw.githubusercontent.com/uclort/gkd_rule/main/gkd.uclort.version.json',
   apps: [
@@ -18,6 +18,9 @@
           rules: [
             {
               matches: '[id="com.gwm.truck:id/splash_tv"]',
+              snapshotUrls: [
+                'https://i.gkd.li/snapshot/1704075933190',
+              ],
             },
           ],
         },
@@ -30,6 +33,29 @@
           rules: [
             {
               matches: '[id="com.gwm.truck:id/close_btn"]',
+              snapshotUrls: [
+                'https://i.gkd.li/snapshot/1704075939552',
+              ],
+            },
+          ],
+        },
+        {
+          key: 3,
+          name: '首页引导页',
+          activityIds: [
+            'com.gwm.pickup.ui.home.HomeActivity',
+          ],
+          rules: [
+            {
+              action: 'back',
+              matches: '[id="com.gwm.truck:id/NewsGuideRoot" || id="com.gwm.truck:id/ivGuide" || id="com.gwm.truck:id/parkGuideRoot" || id="com.gwm.truck:id/clubGuideRoot" || id="com.gwm.truck:id/loveCarRoot"]',
+              snapshotUrls: [
+                'https://i.gkd.li/snapshot/1704075808193',
+                'https://i.gkd.li/snapshot/1704075813646',
+                'https://i.gkd.li/snapshot/1704075820692',
+                'https://i.gkd.li/snapshot/1704075826867',
+                'https://i.gkd.li/snapshot/1704075833801',
+              ],
             },
           ],
         },
