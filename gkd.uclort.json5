@@ -21,6 +21,18 @@
             },
           ],
         },
+        {
+          key: 2,
+          name: '首页弹窗',
+          activityIds: [
+            'com.gwm.pickup.ui.splash.PopAdActivity',
+          ],
+          rules: [
+            {
+              matches: '[id="com.gwm.truck:id/close_btn"]',
+            },
+          ],
+        },
       ],
     },
   ],
