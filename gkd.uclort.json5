@@ -1,7 +1,7 @@
 {
   id: 226,
   name: 'Uclort',
-  version: 1,
+  version: 2,
   author: 'uclort',
   checkUpdateUrl: 'https://raw.githubusercontent.com/uclort/gkd_rule/main/gkd.uclort.version.json',
   apps: [
